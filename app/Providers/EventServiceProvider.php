@@ -21,7 +21,7 @@ class EventServiceProvider extends ServiceProvider
             \App\Listeners\CommentAchivementListner::class,
         ],
         LessonWatched::class => [
-            App\Listeners\LessonAchivementListner::class,
+            \App\Listeners\LessonAchivementListner::class,
         ],
         AchievementUnlocked::class => [
             \App\Listeners\AchivementListner::class,
