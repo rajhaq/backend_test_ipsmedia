@@ -25,7 +25,6 @@ class CommentAchivementListner
      */
     public function handle($event)
     {
-        // dd($event->user->comments->count());
         $user_comments=$event->user->comments->count();
         $achievement_name='';
         $comments_written_achivement_config = config('constants.comments_written_achivement');

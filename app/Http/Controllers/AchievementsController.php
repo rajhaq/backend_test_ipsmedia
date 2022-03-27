@@ -71,7 +71,6 @@ class AchievementsController extends Controller
         $next_badge="";
         $badges_config = config('constants.badges');
         $remaing_to_unlock_next_badge = 0;
-        // dd($badges_config[$i+1]['start'].' - '.$number_of_achievements);
         for($i=1; $i<=count($badges_config); $i++)
             {
                 if($i==count($badges_config) && $number_of_achievements>=$badges_config[$i]['start'])

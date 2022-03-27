@@ -18,9 +18,11 @@ class EventServiceProvider extends ServiceProvider
      */
     protected $listen = [
         CommentWritten::class => [
+            //call after insert
             \App\Listeners\CommentAchivementListner::class,
         ],
         LessonWatched::class => [
+            //call after insert
             \App\Listeners\LessonAchivementListner::class,
         ],
         AchievementUnlocked::class => [

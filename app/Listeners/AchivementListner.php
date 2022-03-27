@@ -27,7 +27,6 @@ class AchivementListner
      */
     public function handle($event)
     {
-        // AchievementUnlocked::dispatch($achievement_name,$event->user);
         $total_achivement = 0;
 
         $user_comments=$event->user->comments->count();
